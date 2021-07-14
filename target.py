@@ -33,8 +33,8 @@ def get_bars_and_stripes_target_distribution(nrows, ncols, fraction=1., method="
             bitstring += str(qubit)
 
         distribution_dict[bitstring] = 1.
-    
-    save_bitstring_distribution(BitstringDistribution(distribution_dict), "distribution.json") 
+
+    save_bitstring_distribution(BitstringDistribution(distribution_dict), "distribution.json")
 
 
 # Generate BAS with specified rows and columns in zigzag pattern (taken from Vicente's code, would be careful about ownership of code)
@@ -79,5 +79,3 @@ def get_num_bars_and_stripes_patterns(nrows, ncols) -> int:
             num_patterns += math.factorial(dimension) // (math.factorial(dimension-num_choices) * math.factorial(num_choices))
 
     return num_patterns
-
-#こたびはいけるか
