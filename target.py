@@ -80,3 +80,4 @@ def get_num_bars_and_stripes_patterns(nrows, ncols) -> int:
 
     return num_patterns
 
+#こたびはいけるか
